@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EventRadar | MUJ & National Hackathon Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+    <h1>EventRadar</h1>
+    <p>Professional Event Tracking Platform for MUJ & National Hackathons 2026</p>
+    <button onclick="scrollToEvents()">Explore Events</button>
+</header>
+
+<section class="stats">
+    <div class="stat-card">
+        <h2 id="totalEvents">0</h2>
+        <p>Total Events</p>
+    </div>
+    <div class="stat-card">
+        <h2 id="collegeCount">0</h2>
+        <p>MUJ Events</p>
+    </div>
+    <div class="stat-card">
+        <h2 id="nationalCount">0</h2>
+        <p>National Events</p>
+    </div>
+</section>
+
+<section class="controls">
+    <input type="text" id="searchInput" placeholder="Search event name...">
+    
+    <select id="categoryFilter">
+        <option value="All">All Categories</option>
+        <option value="Hackathon">Hackathon</option>
+        <option value="Ideathon">Ideathon</option>
+        <option value="Fest">Fest</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Corporate">Corporate</option>
+    </select>
+
+    <select id="levelFilter">
+        <option value="All">All Levels</option>
+        <option value="College">MUJ</option>
+        <option value="National">National</option>
+    </select>
+</section>
+
+<section id="eventsContainer" class="events"></section>
+
+<footer>
+    <p>© 2026 EventRadar | Developed by Pranav Srivastava | MUJ</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
